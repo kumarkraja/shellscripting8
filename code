@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "FIND THE FILE IS EXIST OR NOT IN THE SERVER"
+echo "enter the file "
+read file
+echo $file
+if [ -f $file ]
+then
+echo "$file is existed in the server"
+  cat $file 
+else
+echo "Not found "
+  touch $file
+echo "file is created "
+  cat $file
+fi
