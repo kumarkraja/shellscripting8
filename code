@@ -4,6 +4,7 @@ echo "FIND THE FILE IS EXIST OR NOT IN THE SERVER"
 echo "enter the file "
 read file
 echo $file
+# if [ find -f $file ] or  
 if [ -f $file ]
 then
 echo "$file is existed in the server"
